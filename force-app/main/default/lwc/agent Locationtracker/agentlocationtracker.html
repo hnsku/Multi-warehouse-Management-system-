@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Agent Visit Tracker" icon-name="utility:checkin">
+        <div class="slds-p-around_medium">
+            <p><b>Latitude:</b> {latitude}</p>
+            <p><b>Longitude:</b> {longitude}</p>
+            <p><b>Visit Duration:</b> {formattedDuration}</p>
+            <lightning-button label="Refresh" onclick={getLocation} variant="brand"></lightning-button>
+        </div>
+    </lightning-card>
+</template>
